@@ -4,12 +4,12 @@ body{
     font-size: 1rem;
 }
 .gradient{
-background: #89d6f5;
-background: linear-gradient(90deg, rgba(137, 214, 245, 1) 21%, rgba(153, 255, 196, 1) 82%);
+background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%);
 }
 .gradient-2{
-background: #89d6f5;
-background: linear-gradient(90deg, rgba(137, 214, 245, 1) 21%, rgba(153, 255, 196, 1) 82%);
+background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%);
 }
 
 
