@@ -63,7 +63,8 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
     position: relative;
     width: 26px;
     height: 2px;
-    background-color: #fff;
+    background-image: none;
+    background-color: black;
     transition: transform 0.25s ease, background-color 0.25s ease;
   }
 
@@ -74,9 +75,10 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
     left: 0;
     width: 26px;
     height: 2px;
-    background-color: #fff;
+    background-color: black;
     transition: transform 0.25s ease, top 0.25s ease, bottom 0.25s ease;
   }
+  
 
   .navbar-toggler-icon::before {
     top: -8px;
@@ -84,6 +86,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
 
   .navbar-toggler-icon::after {
     bottom: -8px;
+    background: black;
   }
 
   .navbar-toggler.active .navbar-toggler-icon {
@@ -91,10 +94,12 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
   }
 
   .navbar-toggler.active .navbar-toggler-icon::before {
+    background-color: white;
     transform: translateY(8px) rotate(45deg);
   }
 
   .navbar-toggler.active .navbar-toggler-icon::after {
+    background-color: white;
     transform: translateY(-8px) rotate(-45deg);
   }
 
@@ -131,3 +136,5 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
     text-transform: uppercase;
   }
 }
+
+
