@@ -48,3 +48,86 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
     background: transparent;
 
 }
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    border: none;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    z-index: 1100;
+  }
+
+  .navbar-toggler-icon {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.25s ease, top 0.25s ease, bottom 0.25s ease;
+  }
+
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+
+  .navbar-toggler-icon::after {
+    bottom: -8px;
+  }
+
+  .navbar-toggler.active .navbar-toggler-icon {
+    background-color: transparent;
+  }
+
+  .navbar-toggler.active .navbar-toggler-icon::before {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggler.active .navbar-toggler-icon::after {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.96);
+    padding-top: 5rem;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 1050;
+  }
+
+  .navbar-collapse.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+  }
+}
