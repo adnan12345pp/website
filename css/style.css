@@ -45,7 +45,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
     padding-bottom: 25px;
 }
 .back{
-    background: transparent;
+    backdrop-filter: blur(10px);
 
 }
 
@@ -135,6 +135,25 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
     letter-spacing: 0.25em;
     text-transform: uppercase;
   }
+}
+.navbar.active-home .nav-link {
+  color: white !important;
+}
+
+.navbar.active-intro .nav-link {
+  color: white !important;
+}
+
+.navbar.active-gallery .nav-link {
+  color: white !important;
+}
+.navbar.active-final .nav-link {
+  color: white !important;
+}
+.adnox{
+  padding-top: 10px;
+  padding-left: 15px;
+
 }
 
 
