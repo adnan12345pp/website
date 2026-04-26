@@ -156,6 +156,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 51%)
 
 }
 
+<<<<<<< HEAD
 /* Dark Mode Toggle Button */
 .theme-toggle {
   position: fixed;
@@ -256,3 +257,6 @@ body.dark-mode .btn-outline-light:hover {
     height: 24px;
   }
 }
+=======
+
+>>>>>>> c7394b99b8bba72c804803fa162d321d18c75faa
